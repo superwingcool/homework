@@ -66,4 +66,11 @@ public class FizzBuzzDemoTest {
         assertThat(result, is("FizzBuzzWhizz"));
     }
 
+    @Test
+    public void return_fizz_when_number_contain_3() {
+        FizzBuzzDemo fizzBuzzDemo = new FizzBuzzDemo();
+        String result = fizzBuzzDemo.fizzBuzz(13);
+        assertThat(result, is("Fizz"));
+    }
+
 }

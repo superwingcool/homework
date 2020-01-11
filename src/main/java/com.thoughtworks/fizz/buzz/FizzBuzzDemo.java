@@ -30,6 +30,10 @@ public class FizzBuzzDemo {
             result += "Whizz";
         }
 
+        if (numberStr.contains("3")) {
+            result += "Fizz";
+        }
+
         return result.isEmpty() ? numberStr : result;
     }
 
