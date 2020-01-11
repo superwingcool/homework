@@ -22,4 +22,12 @@ public class FizzBuzzDemoTest {
         assertThat(result, is("Fizz"));
     }
 
+
+    @Test
+    public void return_buzz_when_number_is_a_multiplier_of_5() {
+        FizzBuzzDemo fizzBuzzDemo = new FizzBuzzDemo();
+        String result = fizzBuzzDemo.fizzBuzz(20);
+        assertThat(result, is("Buzz"));
+    }
+
 }
