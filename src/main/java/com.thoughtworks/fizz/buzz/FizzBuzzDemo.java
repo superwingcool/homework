@@ -31,6 +31,9 @@ public class FizzBuzzDemo {
         }
 
         if (numberStr.contains("3")) {
+            if (result.length() > 0) {
+                result = result.replaceAll(result, "");
+            }
             result += "Fizz";
         }
 

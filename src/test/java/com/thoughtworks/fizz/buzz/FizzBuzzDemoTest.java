@@ -73,4 +73,11 @@ public class FizzBuzzDemoTest {
         assertThat(result, is("Fizz"));
     }
 
+    @Test
+    public void return_fizz_when_number_contain_3_and_is_other_multiple() {
+        FizzBuzzDemo fizzBuzzDemo = new FizzBuzzDemo();
+        String result = fizzBuzzDemo.fizzBuzz(30);
+        assertThat(result, is("Fizz"));
+    }
+
 }
