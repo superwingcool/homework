@@ -37,4 +37,11 @@ public class FizzBuzzDemoTest {
         assertThat(result, is("Whizz"));
     }
 
+    @Test
+    public void return_fizz_buzz_when_number_is_a_multiplier_of_3_and_5() {
+        FizzBuzzDemo fizzBuzzDemo = new FizzBuzzDemo();
+        String result = fizzBuzzDemo.fizzBuzz(60);
+        assertThat(result, is("FizzBuzz"));
+    }
+
 }
