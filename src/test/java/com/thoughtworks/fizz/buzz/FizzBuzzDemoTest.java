@@ -15,4 +15,11 @@ public class FizzBuzzDemoTest {
         assertThat(result, is("2"));
     }
 
+    @Test
+    public void return_fizz_when_number_is_a_multiplier_of_3() {
+        FizzBuzzDemo fizzBuzzDemo = new FizzBuzzDemo();
+        String result = fizzBuzzDemo.fizzBuzz(9);
+        assertThat(result, is("Fizz"));
+    }
+
 }
