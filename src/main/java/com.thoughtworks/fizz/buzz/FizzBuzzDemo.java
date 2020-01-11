@@ -27,7 +27,7 @@ public class FizzBuzzDemo {
         }
 
         if (number % 7 == 0) {
-           return "Whizz";
+            result += "Whizz";
         }
 
         return result.isEmpty() ? numberStr : result;
