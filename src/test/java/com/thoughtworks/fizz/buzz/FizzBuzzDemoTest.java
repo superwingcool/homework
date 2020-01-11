@@ -80,4 +80,18 @@ public class FizzBuzzDemoTest {
         assertThat(result, is("Fizz"));
     }
 
+    @Test
+    public void return_buzz_whizz_when_number_contain_5() {
+        FizzBuzzDemo fizzBuzzDemo = new FizzBuzzDemo();
+        String result = fizzBuzzDemo.fizzBuzz(35);
+        assertThat(result, is("BuzzWhizz"));
+    }
+
+    @Test
+    public void return_buzz_whizz_when_number_contain_5_and_is_not_other_multiple() {
+        FizzBuzzDemo fizzBuzzDemo = new FizzBuzzDemo();
+        String result = fizzBuzzDemo.fizzBuzz(53);
+        assertThat(result, is("Buzz"));
+    }
+
 }

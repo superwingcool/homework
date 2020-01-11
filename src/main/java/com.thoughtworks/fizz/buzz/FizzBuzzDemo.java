@@ -30,7 +30,14 @@ public class FizzBuzzDemo {
             result += "Whizz";
         }
 
-        if (numberStr.contains("3")) {
+        if (numberStr.contains("5")) {
+            if (result.contains("Fizz")) {
+                result = result.replaceAll("Fizz", "");
+            } else if (!result.contains("Buzz")) {
+                result += "Buzz";
+            }
+
+        } else if (numberStr.contains("3")) {
             if (result.length() > 0) {
                 result = result.replaceAll(result, "");
             }
