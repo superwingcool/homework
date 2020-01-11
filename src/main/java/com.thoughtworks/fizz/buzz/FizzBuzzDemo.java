@@ -22,7 +22,7 @@ public class FizzBuzzDemo {
             result += "Fizz";
         }
 
-        if (number % 5 == 0) {
+        if (number % 5 == 0 && !numberStr.contains("7")) {
             result += "Buzz";
         }
 
@@ -30,7 +30,7 @@ public class FizzBuzzDemo {
             result += "Whizz";
         }
 
-        if (numberStr.contains("5")) {
+        if (numberStr.contains("5") && !numberStr.contains("7")) {
             if (result.contains("Fizz")) {
                 result = result.replaceAll("Fizz", "");
             } else if (!result.contains("Buzz")) {

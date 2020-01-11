@@ -94,4 +94,11 @@ public class FizzBuzzDemoTest {
         assertThat(result, is("Buzz"));
     }
 
+    @Test
+    public void return_BuzzWhizz_when_number_contain_7() {
+        FizzBuzzDemo fizzBuzzDemo = new FizzBuzzDemo();
+        String result = fizzBuzzDemo.fizzBuzz(75);
+        assertThat(result, is("Fizz"));
+    }
+
 }
